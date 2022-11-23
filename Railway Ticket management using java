@@ -1,0 +1,99 @@
+coding:
+
+
+import java.util.*;
+class Rail
+{
+    
+    
+        String date;
+        String Reservation;
+        String name;
+        String place;
+        String to;
+        int ticketno;
+        int number;
+        String pno;
+        int otp;
+        int age;
+        String seetno;
+        int tno;
+        float cost;
+        String seatno;
+        String  paymentmethod;
+                
+                
+                
+    Scanner sc1=new Scanner(System.in);
+    // ticket booking form
+     public void booking()
+    {
+        System.out.println("\t\tｗｅｌｃｏｍｅ  ｔｏ   ｏｕｒ  ｓｅｒｖｉｃｅ");
+        System.out.println("   ");
+         System.out.println("\t\t\t  ***🚄🚄🚄🚄**");
+        System.out.println("   ");
+        System.out.print("Enter the Reservation Quota :\t");
+        Reservation=sc1.next();
+         System.out.print("Enter Train Name or Number :\t");
+        tno=sc1.nextInt();
+        System.out.print("Enter the source Station :\t");
+        place=sc1.next();
+        System.out.print("Enter the Destination Station :\t");
+        to=sc1.next();
+        System.out.print("Choose the Seet number :\t");
+        seatno=sc1.next();
+        System.out.print("Enter the Date :\t");
+        date=sc1.next();
+         System.out.print("Enter passenger name :\t");
+        name=sc1.next();
+        System.out.print("Enter passenger Age :\t");
+        age=sc1.nextInt();
+        System.out.print("Enter passenger phone number :\t");
+        pno=sc1.next();
+         System.out.println("   ");
+    }
+    //verification
+   public  void verification()
+    {    System.out.println("   ");
+        System.out.println("\t\t\t  ✔️✔️✔️✔️✔️✔️✔️✔️✔️✔✔️✔️✔️✔️✔️️✔️✔️✔️");
+        System.out.print("Enter ther OTP sent to your registered phone number :\t");
+        otp=sc1.nextInt();
+        System.out.print("choose your payment method :\t");
+        paymentmethod=sc1.next();
+        System.out.print("Enter the ammount to proceed :\t");
+        cost=sc1.nextFloat();
+         System.out.print("Press any number to show detailsother wise press Exit :\t");
+        number=sc1.nextInt();
+         System.out.println("   ");
+         
+    }
+    public void detail()
+    {     System.out.println("   ");
+         System.out.println("\t\t\t  ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰");
+        System.out.println("Reservation Quotat  ➫"+Reservation);
+         System.out.println("Train Name or Number  ➫"+tno);
+          System.out.println("source Station  ➫"+ place);
+           System.out.println("Destination Station  ➫"+to);
+            System.out.println("Seat number ➫"+seatno);
+             System.out.println("Date ➫"+date);
+              System.out.println("passenger name ➫"+name);
+               System.out.println("Age ➫"+age);
+                System.out.println("phone number ➫"+pno);
+                 System.out.println("Amount payed  ➫"+ cost);
+                  System.out.println(" \n                              ⦅🅷🅰🅿🅿🆈🅹🅾🆄🆁🅽🅴🆈⦆ ");
+                  
+        
+    }
+}
+public class HelloTab
+{
+    public static void main(String[] args)
+    {
+        Rail r=new Rail();
+        r.booking();
+        r.verification();
+        r.detail();
+        
+        
+    }
+}
