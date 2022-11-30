@@ -1,0 +1,39 @@
+Palindrome of a number
+
+Program to check whether the given number is a Palindrome or  Not a Palindrome is discussed here. Any number is said to be a palindrome if the original number and the reverse of the original number are the same.
+
+For example, 1234321 is a palindrome.
+
+Original number = 1234321
+
+The reverse of the number = 1234321
+
+Sample Input:
+454
+
+Sample Output:
+
+Palindrome
+CODING:
+import java.util.Scanner;
+public class Palindrome
+{
+    public static void main(String[] args)
+    {
+    Scanner sc=new Scanner (System.in);
+    int x=sc.nextInt();
+    int r,sum=0,temp;    
+    temp=x;
+    while(x>0)
+    {    
+      r=x%10;  //getting remainder  
+      sum=(sum*10)+r;    
+      x=x/10;    
+    }    
+        if(temp==sum)
+        System.out.println("Palindrome");
+        else
+        System.out.println("Not a Palindrome");
+    
+    }
+}
