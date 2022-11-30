@@ -1,0 +1,82 @@
+Sabrina and Theo’s Game-2
+
+Sabrina and Theo were friends. They felt very bored and decided to play a game with calendar and number of days. Sabrina will give the month and the year as input, and Theo wants to find the number of days in that month. Write a C program using switch case and help Sabrina to find the answer. You should check whether the given year is a leap year. If it is a leap year it will have 29 days in February.
+
+Input & Output Format:
+
+Input consists of two integers.
+
+First input consists of  a month.
+
+Second input consists of a year.
+
+Output consists of a integer.
+
+
+Sample Input:
+
+3
+
+1996
+CODING:
+//Code here//Code hereimport java.util.Scanner:
+import java.util.Scanner;
+class Game
+{
+    public static void main(String[] arg)
+    {
+        Scanner sc=new Scanner(System.in);
+        int m=sc.nextInt();
+        int y=sc.nextInt();
+        switch(m)
+        {
+        case 1:
+         System.out.println("Number of days is 31");
+            break;
+        case 2:
+            {
+                if((y%4==0) || ((y%100==0)&&(y%400==0)))
+
+                
+                System.out.println("Number of days is 29");
+                else
+                System.out.println("Number of days is 28");
+                 
+                
+            }break;
+            
+        case 3:
+            System.out.println("Number of days is 31");
+            break;
+        case 4:
+             System.out.println("Number of days is 30");
+            break;
+        case 5:
+             System.out.println("Number of days is 31");
+            break;
+        case 6:
+             System.out.println("Number of days is 30");
+            break;
+        case 7:
+             System.out.println("Number of days is 31");
+            break;
+        case 8:
+             System.out.println("Number of days is 31");
+            break;
+        
+        case 9:
+             System.out.println("Number of days is 30");
+            break;
+        case 10:
+             System.out.println("Number of days is 31");
+            break;
+        case 11:
+             System.out.println("Number of days is 30");
+            break;
+        case 12:
+             System.out.println("Number of days is31");
+            break;
+        }  
+    }
+}
+
