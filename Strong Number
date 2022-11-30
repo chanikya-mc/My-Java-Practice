@@ -1,0 +1,50 @@
+Strong Number
+
+Program to check if a given number is a strong number or not is discussed here. A strong number is a number in which the sum of the factorial of the digits is equal to the number itself.
+
+Input & Output Format:
+Input consists of one integer.
+
+Output consists of a string. 
+
+If it is true then display "Strong Number" else display "Not a Strong Number".
+
+Sample Input & Output:
+
+145
+
+Strong Number
+CODING:
+import java.util.Scanner;
+public class Strong
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+        int sum=0;
+           int fact=1;
+       
+        
+        
+          int s=x%10;
+        for(int i=s;i!=0;i--)
+         
+            { fact=fact*i;
+             
+            }
+            sum=sum+fact;
+            s=s/10;
+        
+        if(sum==x)
+        {
+            System.out.println("Strong Number");
+        }
+        else
+        {
+           System.out.println("Not a Strong Number"); 
+        
+        }
+        
+    }
+}
