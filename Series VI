@@ -1,0 +1,41 @@
+Series VI
+
+Write a program to generate the following series --- 0,2,8,14,...,34 
+
+Input format: 
+
+The input containing an integer which denotes 'n'
+
+Output format: 
+
+Print the series and refer the sample output for formatting.
+
+Sample Input & Output:
+
+5
+
+0 2 8 14 24 
+CODING:
+import java.util.*;
+public class Series6
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int x;
+        for(int i=1;i<=n;i++)
+        {
+            if(i%2!=0)
+            {
+            x=(int)Math.pow(i,2);
+            System.out.print(" "+(x-1));
+            }
+            else
+            {
+            x=(int)Math.pow(i,2);
+             System.out.print(" "+(x-2));
+            }
+        }
+    }
+}
