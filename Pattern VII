@@ -1,0 +1,63 @@
+Pattern VII
+
+Write a Python program to print the given pattern from user-defined values(dynamic values).
+
+Sample input 1:
+5
+Sample output 1:
+*****
+*     *
+*     *
+*     *
+***** 
+
+Sample input 2:
+8
+Sample output 2:
+********
+*          *
+*          *
+*          *
+*          *
+*          *
+*          *
+********
+
+CODING:
+import java.util.Scanner;
+public class Pattern7 {
+
+static void print_rectangle(int n, int m) {
+
+int i, j;
+
+for (i = 1; i <= n; i++) {
+
+for (j = 1; j <= m; j++) {
+
+if (i == 1 || i == n || j == 1 || j == m) //Logic to print 
+
+System.out.print("*"); //Tue?, print star
+
+else
+
+System.out.print(" "); //Tue?, print space
+
+}
+
+System.out.println();
+
+}
+
+}
+
+public static void main(String args[]) {
+Scanner sc=new Scanner(System.in);
+int rows = sc.nextInt();
+int columns =sc.nextInt();
+
+print_rectangle(rows, columns); //Method call
+
+}
+
+}
