@@ -1,0 +1,33 @@
+String Concat
+
+Write a C program to find the concatenation of given two strings using string library functions:
+
+INPUT & OUTPUT FORMAT: 
+
+Input consists of 2 strings.
+
+Output consists of concatenated strings
+
+Sample Input:
+cyfuno
+
+technology
+
+Sample Output:
+
+cyfunotechnology
+
+CODING:
+import java.util.*;
+import java.lang.String;
+class String6
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.next();
+         String s1=sc.next();
+        System.out.println(s+s1);
+    }
+}
+ 
