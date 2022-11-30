@@ -1,0 +1,63 @@
+Sort the array in ascending order
+
+Write a  program to sort the given array in ascending order:
+
+Input & Output Format:
+
+Input consists of 1 integer and 1 array
+
+First input consists of size of an array.
+
+Second inputs consists of an elements depends upon their size.
+
+Output consists of an array in ascending order.
+
+Sample Input:
+5
+54
+68
+25
+14
+74
+
+Sample Output:
+14
+25
+54
+68
+74
+CODINNG:
+import java.util.Scanner;
+public class Sort
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        
+        int temp;
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+          for(int i=0;i<n;i++)
+          {
+              for(int j=i+1;j<n;j++)
+              {
+                  if(arr[i]>arr[j])
+                  {
+                      temp=arr[i];
+                      arr[i]=arr[j];
+                      arr[j]=temp;
+                      
+                  }
+              }
+          }
+        for(int i=0;i<n;i++)
+        {
+            System.out.println(""+arr[i]);
+        }
+        
+    }
+}
