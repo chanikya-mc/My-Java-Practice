@@ -1,0 +1,28 @@
+Copy String
+
+Write a program to copy a string from one variable to other using string library functions: 
+
+INPUT & OUTPUT FORMAT: 
+
+Input consists of 1 string.
+
+Output consists of 1 string.
+
+Sample Input:
+hello 
+
+Sample Output:
+hello
+
+CODING:
+import java.util.Scanner;
+class String3
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.next();
+        String j=s;
+        System.out.println(j);
+    }
+}
