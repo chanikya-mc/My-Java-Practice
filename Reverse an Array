@@ -1,0 +1,56 @@
+Reverse an Array
+
+
+Input & Output Format:
+
+Input consists of 1 integer and 1 array.
+
+First input consists of the size of an array.
+
+Second inputs consists of array elements based on their array size.
+
+Sample Input:
+3
+1
+2
+3
+
+Sample Output:
+3
+2
+1
+CODING:
+import java.util.Scanner;
+public class Reverse
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        
+        int temp;
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+          for(int i=0;i<n;i++)
+          {
+              for(int j=i+1;j<n;j++)
+              {
+                  if(arr[i]>arr[j])
+                  {
+                      temp=arr[i];
+                      arr[i]=arr[j];
+                      arr[j]=temp;
+                      
+                  }
+              }
+          }
+        for(int i=0;i<n;i++)
+        {
+            System.out.println(""+arr[i]);
+        }
+        
+    }
+}
