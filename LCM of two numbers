@@ -1,0 +1,47 @@
+LCM of two numbers
+
+Write a program to find LCM of two numbers is discussed here. Two numbers are obtained as input and the prime factors of both the numbers are found. The product of the union of prime factors of both the numbers gives the LCM of the two numbers.
+
+Input & Output Format:
+
+Input consists of two integers.
+
+Output consists of the lcm of two numbers.
+
+Sample Input:
+
+5
+
+30
+
+Sample Output:
+
+LCM of 5 and 30 is 30
+CODING:
+import java.util.Scanner;
+public class Lcm
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int max,step;
+        int lcm=0;
+         if(a > b){
+         max = step = a;
+      }
+      else{
+         max = step = b;
+      }
+
+      while(a!= 0) {
+         if(max % a == 0 && max % b == 0) {
+            lcm = max;
+            break;
+         }
+         max += step;
+      }
+        System.out.printf("LCM of %d and %d is %d",a,b,lcm);
+    }
+}
