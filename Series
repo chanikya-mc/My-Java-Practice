@@ -1,0 +1,31 @@
+Series
+
+Write a program to generate the following series 
+
+Sample Input:
+
+5
+
+Sample Output:
+
+3  2  11  14  27
+CODING:
+import java.util.Scanner;
+class Series
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+        
+        for (int i=1;i<=x;i++)
+       {
+        if(i%2==0)
+        {
+            System.out.println(i*i-2);
+        }
+        else
+        System.out.println(i*i+2);
+       }
+    }    
+}
