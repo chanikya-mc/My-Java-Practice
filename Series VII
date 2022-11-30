@@ -1,0 +1,42 @@
+Series VII
+
+Write a program to generate the following series --- 1, 2.0, 3.0, 6.0, 9.0, 18.0, 27.0,... 
+
+Input format: 
+
+The input containing an integer which denotes 'n' 
+
+Output format: 
+
+Print the series and refer the sample output for formatting
+
+Sample Input & Output:
+
+5
+
+1 2.0 3.0 6.0 9.0 
+CODING:
+import java.util.Scanner;
+public class Series7
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+        float y=1;
+        float z=2;
+        System.out.print("1 2.0");
+        for(int i=3;i<=x;i++)
+        {
+            if(i%2==1)
+            {
+            y=y*3;
+            System.out.print(" "+y);
+            }else
+            {
+            z=z*3;
+            System.out.print(" "+z);
+            }
+        }
+    }
+}
