@@ -1,0 +1,50 @@
+Friendly Pair
+
+ Program to find if the given numbers are Friendly pair or not (Amicable or not) is discussed here. Friendly Pair are two or more numbers with a common abundance.
+
+Input & Output format: 
+
+Input consists of 2 integers.
+The first integer corresponds to number 1 and the second integer corresponds to number 2.
+If it is a Friendly Pair display Friendly Pair or displays Not Friendly Pair.
+For example,6 and 28 are Friendly Pair.
+
+(Sum of divisors of 6)/6 = (Sum of divisors of 28)/28.
+
+Sample Input:
+6
+
+28
+
+Sample Output:
+
+Friendly Pair
+CODING:
+import java.util.Scanner;
+public class Friendly
+{
+    public static void main(String[] args)
+    {
+     Scanner sc=new Scanner(System.in);
+     int x=sc.nextInt();
+     int y=sc.nextInt();
+     int sum=0;
+     int count=0;
+     int i,j;
+     for (i=1;i<x;i++)
+     {
+         if (x%i==0)
+         sum=sum+i;
+     }
+     for (j=1;j<y;j++)
+     {
+         if(y%j==0)
+         count=count+j;
+         
+     }
+     if (sum/x==count/y)
+     System.out.println("Friendly Pair");
+     else
+         System.out.println("Not Friendly Pair");
+    }
+}
