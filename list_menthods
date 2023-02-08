@@ -1,0 +1,18 @@
+coding:
+
+import java.util.*;
+public class main{
+    public static void main(String[] ar){
+        ArrayList<String> al=new ArrayList<String>();
+        System.out.println(al.isEmpty());
+        al.add("mc");
+        al.add("loves");
+        al.add("movies");
+        al.add(2,"Bahubali");
+        System.out.println(al);
+        System.out.println(al.get(2));
+         System.out.println(al.hashCode());
+         System.out.println(al.remove(1));
+          System.out.println(al.size());
+    }
+}
