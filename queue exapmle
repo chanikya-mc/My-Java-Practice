@@ -1,0 +1,13 @@
+coding:
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+       Queue <Integer> q=new PriorityQueue<Integer>();
+       q.add(24);
+       q.add(2435);
+       q.add(998);
+      q.add(99);
+      q.remove(998);
+       System.out.println(q);
+    }
+}
