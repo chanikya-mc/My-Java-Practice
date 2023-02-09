@@ -1,0 +1,21 @@
+Array List- String2
+
+Write a program using ArrayList to print the follwoing output:
+ArrayList: [Cat, Dog, Cow]
+Element at index 1: Dog
+
+
+coding:
+import java.util.*;
+class Array2{
+public static void main(String arg[]){
+    
+
+ArrayList<String> s=new ArrayList<String>();
+s.add("Cat");
+s.add("Dog");
+s.add("Cow");
+System.out.println("ArrayList: "+s);
+System.out.print("Element at index 1: "+s.get(1));
+}
+}//code here//code here
