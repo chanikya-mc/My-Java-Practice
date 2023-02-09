@@ -1,0 +1,14 @@
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+       Deque <Integer> q=new ArrayDeque<Integer>();
+       q.add(2);
+       q.add(4);
+       q.add(6);
+      q.add(8);
+     q.add(10);
+       System.out.println(q);
+        q.remove(10);
+        System.out.println(q);
+    }
+}
