@@ -1,0 +1,20 @@
+Array List- Update list
+
+Write a program using ArrayList to print the follwoing output:
+ArrayList: [Java, Kotlin, C++]
+Modified ArrayList: [Java, Kotlin, JavaScript]
+coding:
+import java.util.*;
+class Array3{
+public static void main(String arg[]){
+    
+
+ArrayList<String> s=new ArrayList<String>();
+s.add("Java");
+s.add("Kotlin");
+s.add("C++");
+System.out.println("ArrayList: "+s);
+s.set(2,"JavaScript");
+System.out.print("Modified ArrayList: "+s);
+}
+}//code here//code here
