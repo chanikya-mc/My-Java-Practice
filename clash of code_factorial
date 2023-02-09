@@ -1,0 +1,30 @@
+coding:
+import java.util.*;
+import java.io.*;
+import java.math.*;
+
+/**
+ * Auto-generated code below aims at helping you parse
+ * the standard input according to the problem statement.
+ **/
+class Solution {
+
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        int N = in.nextInt();
+        long x=1;
+if (N>0)
+{
+    for(int i=1;i<=N;i++){
+        x=x*i;
+
+    }
+    System.out.println(x);
+}
+else{
+System.out.println("No negative integers");
+}
+        
+        
+    }
+}
